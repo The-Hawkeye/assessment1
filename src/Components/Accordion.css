@@ -1,0 +1,35 @@
+.accordion {
+    width: 300px;
+    margin: auto;
+  }
+  
+  .accordion-item {
+    color: var(--Text-Text, #252020);
+    font-family: Simplon Norm;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .accordion-header {
+    color: var(--Text-Text, #252020);
+font-family: Simplon Norm;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+  }
+  
+  .accordion-content {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+
+  
+
+
+
+ 
