@@ -6,6 +6,7 @@ import searchIcon from "../assets/search-normal.png";
 import shoppingBag from "../assets/shopping-bag.png";
 import arrow from "../assets/arrow-left.png";
 import logo from "../assets/Logo.png";
+import { Link } from "@mui/material";
 
 
 
@@ -30,7 +31,7 @@ const Header = ()=>{
                     <li>SKILLS</li>
                     <li>STORIES</li>
                     <li>ABOUT US</li>
-                    <li><a href="/contact" target="_blank">CONTACT US</a></li>
+                    <li ><Link className="contact-link" to="/" >CONTACT US</Link></li>
                 </ul>
             </div>
             <hr/>

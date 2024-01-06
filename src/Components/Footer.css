@@ -100,9 +100,21 @@ margin-right: 8px;
 }
 .about{
     grid-column: 1/6;
+    color: var(--Misc-White, #FFF);
+font-family: Simplon Norm;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 .faqs{
     grid-column: 6/12;
+    color: var(--Misc-White, #FFF);
+font-family: Simplon Norm;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
 .search-box{

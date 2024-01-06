@@ -36,3 +36,8 @@ li{
     position: relative;
     left: 110px;
 }
+
+.contact-link{
+    color: black !important;
+    text-decoration-color: black !important;
+}
