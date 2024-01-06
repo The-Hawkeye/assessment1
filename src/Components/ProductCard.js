@@ -1,7 +1,4 @@
 import "./ProductCard.css";
-import {Card, CardActions,
-    CardContent,
-    CardMedia,} from "@mui/material";
 
 const ProductCard = (props)=>{
     // console.log(props.product,"fvfvf");
