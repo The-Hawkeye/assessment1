@@ -1,56 +1,4 @@
-// import { useState, useEffect } from "react";
-// import { productsApi } from "../Data/Data";
-// import { Grid, Box } from "@mui/material";
-// import ProductCard from "./ProductCard.js";
-
-// const Products = () => {
-
-//     const [products, setProducts] = useState([]);
-//     const [showFilters, setShowFilters] = useState(false)
-//     // Fetch products from the server.
-
-//     const fetchProductsData = async () => {
-//         try {
-//             const data = await fetch(productsApi);
-//             const jsonData = await data.json();
-//             setProducts(jsonData);
-//             // return jsonData;
-//         }
-//         catch (err) {
-//             console.log("Error in Fetching Data");
-//             return err;
-//         }
-//     }
-
-//     useEffect(() => {
-//         fetchProductsData();
-//         // console.log(data,"data");
-//         // setProducts(data);
-//     }, []);
-
-//     return (
-//         <div className="products">
-//             <Grid container item>
-//                 <Grid>
-//                     {/* <Grid><Box>Filter Section</Box></Grid> */}
-//                     {/* Map through each product and display it */}
-//                     <Grid>{products ? products.map((product) => (
-//                         <Grid item xs={12} md={4}>
-//                             <ProductCard key={product.id} product={product} />
-//                         </Grid>
-//                     )) : null}</Grid>
-//                 </Grid>
-
-//             </Grid>
-//             {console.log(products, "app")}
-
-//         </div>
-//     )
-// }
-
-
-// export default Products;
-
+/* eslint-disable react-hooks/exhaustive-deps */
 
 import { useState, useEffect } from "react";
 import { productsApi } from "../Data/Data";
@@ -87,24 +35,11 @@ const Products = () => {
 
   useEffect(() => {
     fetchProductsData();
-    // console.log(data,"data");
-    // setProducts(data);
   }, []);
-
-  // const sorting =async(age)=>{
-  //   console.log(age,"age")
-  //   // console.log(products,"before change")
-  //   const filterData = products.sort((a,b)=>{
-  //     // console.log(a,b,"datadata");
-  //     return a.price-b.price
-  //   }) 
-  //   setProducts(filterData)
-  //   console.log(filterData,"afterChange")
-  // }
   
   useEffect(()=>{
     async function sorting(){
-    if(age=="priceLow")
+    if(age==="priceLow")
   {
     const filterData = products.sort((a,b)=>{
       // console.log(a,b,"datadata");
@@ -113,7 +48,7 @@ const Products = () => {
     setProducts([...filterData])
     console.log(filterData,"lowToHigh")
   }
-    else if(age=="priceHigh")
+    else if(age==="priceHigh")
     {
       // console.log(products,"before change")
     const filterData = products.sort((a,b)=>{
@@ -123,7 +58,7 @@ const Products = () => {
     setProducts([...filterData])
     console.log(filterData,"HighToLow")
     }
-    else if(age=="id"){
+    else if(age==="id"){
       console.log(products,"before change")
     const filterData = products.sort((a,b)=>{
       // console.log(a,b,"datadata");
@@ -132,7 +67,7 @@ const Products = () => {
     setProducts([...filterData])
     console.log(filterData,"SortById")
     }
-    else if(age=="rating"){
+    else if(age==="rating"){
       // console.log(products,"before change")
     const filterData = products.sort((a,b)=>{
       // console.log(a,b,"datadata");
